@@ -174,7 +174,6 @@ def graph(xpath,ypath,zpath):
 
     ax.plot(xpath,ypath,zpath)
     plt.show()
-    return ax
 
 def main():
     #get path for each function and plot the graph
