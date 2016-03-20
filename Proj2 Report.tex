@@ -1,0 +1,23 @@
+\documentclass[12pt, oneside]{report}   	
+
+
+
+\title{Optimization Project Comparison}
+\author{Yiren Shi}
+\date{March 20, 2016}							
+
+
+\begin{document}
+\maketitle
+
+\section{Accuracy of each method}
+For Hill Climbing, it will stop when it finds that next result is bigger than the previous one. So in most time, it will give us the local minimum not the global minimum.
+For Hill climbing with Random Starts, it is more accurate than the hill climbing, since once it finds a local minimum, it will restart again. In this case, it will search more to avoid give a result of local minimum instead of global minimum. However, even when we have some random restarts, we still cannot determine if the minimum we find is a global minimum or not.
+For Simulated Annealing, it moves like hill climbing when the next result is smaller than the previous one. However, there is a probability that it will move to the next point even the next point it bigger than the previous one. So it sometimes can find a global minimum.
+
+\section{Speed of each method}
+Hill Climbing is the fastest one, since it will stop once it find a number is smaller than the next one. Hill Climbing with Random Starts takes longer than Hill Climbing, since it has to restart which means it has to take couple times more than Hill Climbing. Simulated Annealing takes longer than Hill Climbing as well, but it takes less time than Hill Climbing with Random Restarts. Because it has a probability to move forward even when the next result is bigger than the previous one, when the Hill Climbing with Random Restarts has to start over a new hill climbing.
+
+\section{Conclusion}
+Hill Climbing works fastest but is less accurate than other two methods. HIll Climbing with Random Restarts takes the longest time, but may less accurate than Simulated Annealing. Simulated Annealing is the most accurate I think and takes less time than Hill Climbing with Random Restarts. 
+\end{document}  
