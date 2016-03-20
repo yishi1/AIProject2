@@ -38,7 +38,7 @@ def getneighbors(x,y,step_size,xmin,xmax,ymin,ymax):
     return neighbors
 
 
-def hill_climb(function, step_size, xmin=-2.5, xmax=2.5, ymin =-2.5, ymax = 2.5):
+def hill_climb(function, step_size, xmin, xmax, ymin, ymax):
     xpath=[]
     ypath=[]
     zpath=[]
